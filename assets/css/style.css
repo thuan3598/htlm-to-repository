@@ -419,8 +419,15 @@ a {
 
 }
 
+.feedback-list{
+  display: flex;
+  overflow: hidden;
+}
+
 .feedback-item{
+  width: 100%;
   display:flex;
+  flex-shrink: 0;/* Quy định độ co giãn của phần tử, bằng 0 tức là không co nữa*/
 }
 
 .feedback-item .avatar{
