@@ -66,7 +66,7 @@ a {
   --line-clamp: 2;
 }
 
-.break-all{
+.break-all {
   word-break: break-all;
 }
 /* =================header================== */
@@ -412,32 +412,31 @@ a {
 
 /* ============================================================ Feed back======================================================== */
 
-.feedback{
+.feedback {
   margin-top: 135px;
   padding: 96px 0;
   background: #2e2100;
-
 }
 
-.feedback-list{
+.feedback-list {
   display: flex;
   overflow: hidden;
 }
 
-.feedback-item{
+.feedback-item {
   width: 100%;
-  display:flex;
-  flex-shrink: 0;/* Quy định độ co giãn của phần tử, bằng 0 tức là không co nữa*/
+  display: flex;
+  flex-shrink: 0; /* Quy định độ co giãn của phần tử, bằng 0 tức là không co nữa*/
 }
 
-.feedback-item .avatar{
+.feedback-item .avatar {
   height: 72px;
   width: 72px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.feedback-item .info .member-name{
+.feedback-item .info .member-name {
   margin-top: 18px;
   color: #f7f7f7;
   font-family: var(--font-heading);
@@ -446,20 +445,20 @@ a {
   line-height: 1.42;
 }
 
-.feedback-item .info .desc{
+.feedback-item .info .desc {
   margin-top: 4px;
   color: #bfbcb2;
   font-size: 1.4rem;
   line-height: 1.86;
 }
 
-.feedback-item .dots{
+.feedback-item .dots {
   display: flex;
   margin-top: 28px;
   gap: 6px;
 }
 
-.feedback-item .dot{
+.feedback-item .dot {
   height: 6px;
   width: 6px;
   border-radius: 50%;
@@ -467,18 +466,18 @@ a {
   cursor: pointer;
 }
 
-.feedback-item .dot.active{
+.feedback-item .dot.active {
   background: var(--primary-color);
   cursor: default;
 }
 
-.feedback-item .content{
+.feedback-item .content {
   width: 66%;
   margin-left: auto;
 }
 
-.feedback-item blockquote{
-  color:#fff;
+.feedback-item blockquote {
+  color: #fff;
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;
@@ -486,33 +485,34 @@ a {
 
 /* ======================== features 1 ======================== */
 
-.features{
+.features {
   margin-top: 135px;
   padding: 65px 0;
 }
 
-.features .body{
+.features .body {
   display: flex;
   justify-content: space-between;
 }
 
-.features .images{
+.features .images {
   display: flex;
   gap: 30px;
 }
 
-.features .images img{
+.features .images img {
   width: 270px;
   height: 405px;
   object-fit: cover;
   border-radius: 16px;
 }
 
-.features .images ,.lower{
+.features .images,
+.lower {
   margin-top: 34px;
 }
 
-.features .content{
+.features .content {
   width: 41%;
   /* căn giữa nội dung theo chiều dọc */
   display: flex;
@@ -520,34 +520,130 @@ a {
   justify-content: center;
 }
 
-.features .desc{
+.features .desc {
   margin-top: 16px;
   color: #5f5b53;
   font-size: 1.6rem;
   line-height: 1.75;
 }
 
-.features .cta-btn{
+.features .cta-btn {
   margin-top: 32px;
   width: 137px;
   height: 50px;
   background: var(--primary-color);
 }
 
-/* ======================== features 1 ======================== */
-.features-2nd{
+/* ======================== features 2 ======================== */
+.features-2nd {
   margin-top: 70px;
 }
-.features-2nd .body{
+.features-2nd .body {
   flex-direction: row-reverse;
 }
 
-.features-2nd .content{
+.features-2nd .content {
   width: 49%;
 }
 
-.features-2nd .images img{
+.features-2nd .images img {
   width: 470px;
   height: 440px;
   object-fit: cover;
+}
+
+/* ======================== Blog ======================== */
+
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc {
+  margin: 16px auto 0;
+  width: 448px;
+  color: #696262;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.blogs .blog-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+
+.blogs .item {
+  width: 33.33%;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.blogs .item:hover{
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blogs .item .thumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.blogs .item .info {
+  padding: 20px 20px 28px;
+}
+
+.blogs .item .date {
+  display: inline-flex;
+  align-items: center;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.blogs .item .date::before {
+  content: "";
+  margin-right: 4px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.blogs .item .date::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  right: -27px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #e2dfda;
+  left: 0;
+  bottom: 0;
+}
+
+.blogs .item .title {
+  margin-top: 12px;
+  color: #171100;
+  font-style: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.blogs .item .btn{
+  margin-top: 12px;
+}
+
+.blogs .item .btn:hover{
+  background: var(--primary-color);
 }
